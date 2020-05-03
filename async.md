@@ -9,7 +9,7 @@ In Rust, it is accomplished using an idea called a Future. <!-- [Future](https:/
 <!-- this needs work, but I don't know how to fix it -->
 Asynchronous programming is used a lot for IO, this is because there are many times where you have to wait for something <!-- "something", I don't like this word but I don't know what else to use. I cant use process because that has a very different meaning. This is very important as using process in this context would be very ambiguous is not just wrong. Maybe task would be a good word here. IDK, I'm lost here. --> to happen (such as reading from a socket or a file) during which no progress can be made.
 This is a perfect moment to hand over control to something else so that it can start to make progress.
-This allows our program to always be making progress, that's the name of the game. <!-- I just added this last part and it sort of works-->
+This allows our program to always be making progress, that'sjjthe name of the game. <!-- I just added this last part and it sort of works-->
 
 This article will be talking a lot about the implementation of futures in Rust.
 However, most of the time programming asynchronous code you will only ever have to use async/await because everything low level is already implemented.
